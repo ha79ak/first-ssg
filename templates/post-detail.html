@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{post.title}}</title>
+</head>
+<body>
+
+{% extends "layout.html" %} 
+
+{% block content %}
+
+<h5><a href="https://hakanpuente.github.io/first-ssg/">> return home page</a></h5>
+
+<h1>{{post.title}}</h1>
+
+<small>{{post.date}}</small>
+
+{{post.content}}
+
+{% endblock %}
+
+</body>
+</html>
+

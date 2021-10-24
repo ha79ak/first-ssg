@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>List of Posts</title>
+</head>
+<body>
+
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>My Blog Posts</h1>
+
+{% for post in posts %}
+  <p>
+    <h2> {{loop.index}} ) <a href="output/posts/{{ post.slug }}/index.html">{{post.title}}</a><br/><h5>{{post.date}}</h5></h2>
+      {{post.summary}}
+  </p>
+{% endfor %}
+
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>What is Graphene?</title>
+</head>
+<body>
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/picnic@6.5.0/picnic.min.css"
+    />
+    <style>
+        .container {
+        width: 80%;
+        margin: auto;
+        margin-top: 3em;
+        }
+    </style>
+  </head>
+  <body class="container">
+    
+
+<h5><a href="https://hakanpuente.github.io/first-ssg/">> return home page</a></h5>
+
+<h1>What is Graphene?</h1>
+
+<small>2021-10-23 22:00</small>
+
+<h3>Introduction</h3>
+
+<h2>What is GraphQL?</h2>
+
+<ul>
+<li><p>GraphQL is a query language for your API.</p></li>
+<li><p>**It provides a standard way to:</p></li>
+</ul>
+
+<p>describe data provided by a server in a statically typed Schema
+request data in a Query which exactly describes your data requirements and
+receive data in a Response containing only the data you requested.
+For an introduction to GraphQL and an overview of its concepts, please refer to the official GraphQL documentation.</p>
+
+<h2>What is Graphene?</h2>
+
+<p>Graphene is a library that provides tools to implement a GraphQL API in Python using a code-first approach.</p>
+
+<p>Compare Graphene’s code-first approach to building a GraphQL API with schema-first approaches like Apollo Server (JavaScript) or Ariadne (Python). Instead of writing GraphQL Schema Definition Language (SDL), we write Python code to describe the data provided by your server.</p>
+
+<p>Graphene is fully featured with integrations for the most popular web frameworks and ORMs. Graphene produces schemas that are fully compliant with the GraphQL spec and provides tools and patterns for building a Relay-Compliant API as well.</p>
+
+<h2>An example in Graphene</h2>
+
+<p>Let’s build a basic GraphQL schema to say “hello” and “goodbye” in Graphene.</p>
+
+<p>When we send a Query requesting only one Field, hello, and specify a value for the name Argument...</p>
+
+<p>{
+  hello(name: "friend")
+}</p>
+
+<p>...we would expect the following Response containing only the data requested (the goodbye field is not resolved).</p>
+
+<p>{
+  "data": {
+    "hello": "Hello friend!"
+  }
+}</p>
+
+<div><a href="https://docs.graphene-python.org/projects/django/en/latest/" rel="lightbox" title="django">for more..</div>
+
+
+
+    <br />
+  </body>
+</html>
